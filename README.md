@@ -1,6 +1,9 @@
 # Audio Saver for ChatGPT
 
+
 A Chrome Extension that adds a native-looking "Download Audio" button to the ChatGPT context menu.
+
+![Demo](demo.gif)
 
 ## Purpose 🎯
 
