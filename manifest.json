@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Audio Saver for ChatGPT",
+  "name": "ChatGPT Audio Downloader",
   "version": "1.0",
   "description": "Adds a native-looking 'Download Audio' button to the ChatGPT context menu.",
   "icons": {

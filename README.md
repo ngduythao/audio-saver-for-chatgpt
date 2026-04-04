@@ -1,39 +1,41 @@
-# Audio Saver for ChatGPT
+# ChatGPT Audio Downloader
 
-
-A Chrome Extension that adds a native-looking "Download Audio" button to the ChatGPT context menu.
+Chrome extension that adds a **Download Audio** action to ChatGPT's message menu so you can save read-aloud audio as a file.
 
 ![Demo](demo.gif)
 
-## Purpose 🎯
+## What it does
 
-I created this extension to help with **IELTS Speaking Shadowing**. 
-ChatGPT's "Read Aloud" feature is great for hearing correct pronunciation and intonation, but I needed a way to download the audio files to practice offline or loop them in a music player for shadowing exercises.
+ChatGPT can read messages aloud, but there's no built-in way to keep that audio. This extension pulls the same high-quality stream (AAC from OpenAI's synthesis flow) and saves it to disk. Handy for offline listening, looping in a player, or archiving.
 
-## Features ✨
+## Features
 
-- **Native Integration**: Adds a "Download Audio" button to the "More actions" (...) menu of any ChatGPT message.
-- **High Quality**: Downloads the audio in AAC format directly from OpenAI's synthesis API.
-- **Privacy Focused**: The extension runs entirely locally. It intercepts your *own* session token to fetch the audio on your behalf. No data is sent to any third-party server.
+**Download from the menu.** "Download Audio" shows in the "More actions" (...) menu next to "Read Aloud".
 
-## Installation 🛠️
+**High quality.** Audio is saved in AAC, matching what the app uses for playback.
 
-1. **Clone or Download** this repository.
-2. Open Chrome and navigate to `chrome://extensions`.
-3. Enable **Developer mode** in the top right corner.
-4. Click **Load unpacked**.
-5. Select the folder where you saved this project.
+**Runs locally.** Your session is used to request audio. Nothing is sent to a separate third-party service.
 
-## Usage 📖
+## Install
 
-1. Go to [ChatGPT](https://chatgpt.com).
-2. Generate a response or find an existing message.
-3. Click the "..." (More actions) menu next to the message.
-4. You will see a new **Download Audio** button next to the "Read Aloud" button.
-5. Click it to save the audio file.
+Clone or download this repo.
 
-> **Note**: If the download doesn't work immediately on a refreshed page, try generating a new message or playing the "Read Aloud" once to ensure the authentication token is captured.
+Open `chrome://extensions` in Chrome.
 
-## Disclaimer ⚠️
+Turn on **Developer mode** (top right).
 
-This project is for educational purposes. It interacts with internal ChatGPT APIs which may change at any time. Use responsibly.
+Click **Load unpacked** and choose this project folder.
+
+## Use
+
+Open [ChatGPT](https://chatgpt.com).
+
+Open the **...** menu on a message.
+
+Choose **Download Audio**.
+
+If a download fails after a refresh, try a new message or play **Read Aloud** once so the session token is available.
+
+## Disclaimer
+
+For learning and personal use. It relies on ChatGPT's internal APIs, which can change. Use responsibly.
